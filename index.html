@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport"/>
+<title>BarConnect - Premium Bar Association Platform</title>
+
+<link href="styles.css" rel="stylesheet"/></head>
+<body>
+<div class="app-container">
+<div class="app-wrapper">
+<!-- Top Bar -->
+<div class="top-bar">
+<div class="top-bar-content">
+<div class="brand-section">
+<div class="brand-logo" id="brandLogo">🗽</div>
+<div class="brand-info">
+<div class="brand-label">BarConnect</div>
+<div class="brand-name" id="brandName">NY State Bar</div>
+</div>
+</div>
+<select class="brand-switcher" id="orgSelector" onchange="switchOrg(this.value)">
+<option value="nybar">NY</option>
+<option value="nvbar">NV</option>
+</select>
+</div>
+</div>
+<!-- Main Content -->
+<div id="content"></div>
+<!-- Bottom Tab Bar -->
+<nav class="tab-bar">
+<button class="tab-button" onclick="switchTab('feed', this)">
+<div class="tab-icon">📰</div>
+<div class="tab-label">Feed</div>
+</button>
+<button class="tab-button" onclick="switchTab('directory', this)">
+<div class="tab-icon">👥</div>
+<div class="tab-label">Directory</div>
+</button>
+<button class="tab-button active" onclick="switchTab('home', this)">
+<div class="tab-icon">🏠</div>
+<div class="tab-label">Home</div>
+</button>
+<button class="tab-button" onclick="switchTab('community', this)">
+<div class="tab-icon">💬</div>
+<div class="tab-label">Community</div>
+</button>
+<button class="tab-button" onclick="switchTab('committees', this)">
+<div class="tab-icon">🏛️</div>
+<div class="tab-label">Committees</div>
+</button>
+</nav>
+</div>
+</div>
+
+<script src="app.js"></script></body>
+</html>
